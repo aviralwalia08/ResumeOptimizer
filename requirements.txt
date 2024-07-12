@@ -4,4 +4,9 @@ langchain
 json-repair
 ipykernel
 openai
+streamlit
+spacy
+pdfplumber
+plotly
+# python -m spacy download en_core_web_sm
 # -e .
