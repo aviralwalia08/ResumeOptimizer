@@ -204,3 +204,33 @@ Projects:
 Consumer Behavior Study: Led a study on consumer behavior in the e-commerce sector, identifying key factors influencing purchase decisions and providing recommendations to improve customer retention.
 Market Entry Analysis: Conducted a market entry analysis for a new product line, assessing market size, competition, and potential barriers, resulting in a successful product launch.
 Brand Perception Survey: Designed and executed a brand perception survey for a leading retail company, analyzing customer feedback and suggesting strategies to enhance brand image."""
+
+
+
+# from topKeywords_resume import *
+# from topKeywords_JD import *
+# from hardSoftSkills_JD import *
+# from hardSoftSkills_resume import *
+# from match_score import *
+from keywords_found_missing import *
+
+# keywords_resume = top_keywords_resume(format_instructions, industry,Job_Profile,resume_marketing)
+# print(keywords_resume[0]['TopKeywords'])
+
+# keywords_JD = top_keywords_JD(format_instructions, industry,Job_Profile,Job_Description)
+# print(keywords_JD[0]['TopKeywords'])
+
+# hss_JD = hardsoftSkill_JD(format_instructions_hss, industry,Job_Profile,Job_Description)
+# print(hss_JD[0]['HardSkills'] , hss_JD[0]['SoftSkills'])
+
+# hss_res = hardsoftSkill_res(industry,Job_Profile,resume_marketing)
+# print('pooo ---->>>' ,hss_res[0]['HardSkills'] , hss_res[0]['SoftSkills'])
+
+# score = match_score(Job_Profile,Job_Description,resume)
+# print(score[0]['Match_score'],"%" )
+
+# score = match_score(Job_Profile,Job_Description,resume_marketing)
+# print(score[0]['Match_score'],"%" )
+
+key_mis_foun =  keywords_found_missing(Job_Profile,Job_Description,resume)
+print(key_mis_foun)
