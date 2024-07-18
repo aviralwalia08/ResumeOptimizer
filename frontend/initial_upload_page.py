@@ -23,4 +23,4 @@ def display_initial_upload_page():
         st.experimental_rerun()
 
     st.info("Ensure your resume is updated with relevant keywords to improve your match percentage.")
-    st.markdown('<div class="footer">Developed with ❤ by Your Name</div>', unsafe_allow_html=True)
+    st.markdown('<div class="footer">Developed with ❤ by Aviral , Sawan & Sufyan . For the the students by the Students.</div>', unsafe_allow_html=True)
