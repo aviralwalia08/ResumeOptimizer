@@ -214,23 +214,24 @@ from hardSoftSkills_resume import *
 from match_score import *
 from keywords_found_missing import *
 
-keywords_resume = top_keywords_resume(format_instructions, industry,Job_Profile,resume_marketing)
-print(keywords_resume[0]['TopKeywords'])
+# keywords_resume = top_keywords_resume(format_instructions, industry,Job_Profile,resume_marketing)
+# print(keywords_resume[0]['TopKeywords'])
 
-keywords_JD = top_keywords_JD(format_instructions, industry,Job_Profile,Job_Description)
-print(keywords_JD[0]['TopKeywords'])
+# keywords_JD = top_keywords_JD(format_instructions, industry,Job_Profile,Job_Description)
+# print(keywords_JD[0]['TopKeywords'])
 
-hss_JD = hardsoftSkill_JD(format_instructions_hss, industry,Job_Profile,Job_Description)
-print(hss_JD[0]['HardSkills'] , hss_JD[0]['SoftSkills'])
+# hss_JD = hardsoftSkill_JD(format_instructions_hss, industry,Job_Profile,Job_Description)
+# print(hss_JD[0]['HardSkills'] , hss_JD[0]['SoftSkills'])
 
-hss_res = hardsoftSkill_res(industry,Job_Profile,resume_marketing)
-print('pooo ---->>>' ,hss_res[0]['HardSkills'] , hss_res[0]['SoftSkills'])
+# hss_res = hardsoftSkill_res(industry,Job_Profile,resume_marketing)
+# print('pooo ---->>>' ,hss_res[0]['HardSkills'] , hss_res[0]['SoftSkills'])
 
-score = match_score(Job_Profile,Job_Description,resume)
-print(score[0]['Match_score'],"%" )
+# score = match_score(Job_Profile,Job_Description,resume)
+# print(score)
+# print(int(score[0]['Match_score']))
 
-score = match_score(Job_Profile,Job_Description,resume_marketing)
-print(score[0]['Match_score'],"%" )
+# score = match_score(Job_Profile,Job_Description,resume_marketing)
+# print(score[0]['Match_score'],"%" )
 
 key_mis_foun =  keywords_found_missing(Job_Profile,Job_Description,resume)
 print(key_mis_foun)

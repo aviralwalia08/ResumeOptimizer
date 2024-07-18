@@ -1,14 +1,15 @@
-from utils import *
-from model_setup import *
+from src.utils import *
+from src.model_setup import *
 
-response_schemas_hss = [
+
+
+def hardsoftSkill_JD(industry,Job_Profile,Job_Description):
+    response_schemas_hss = [
     ResponseSchema(name="HardSills", description="List of Hard Skill's keywords that are there in the Job Description"),
     ResponseSchema(name="SoftSkills", description="List of Soft Skill's keywords that are there in the Job Description")
-]
+    ]
 
-format_instructions_hss = format_inst(response_schemas_hss)
-
-def hardsoftSkill_JD(format_instructions, industry,Job_Profile,Job_Description):
+    format_instructions = format_inst(response_schemas_hss)
     rel_base_prompt_data_2 = '''Act as a {industry} industry Hiring manager.For a {Job_Profile} Job Profile, Given is the Job Description {Job_Description}.Extract the list of all hard skills and soft skills keywords from the given Job Description that should be in the cadidates resume to get shortlisted for the Job .\n{format_instructions}.\n'''
 
     prompt = PromptTemplate(

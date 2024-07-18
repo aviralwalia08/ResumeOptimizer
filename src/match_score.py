@@ -1,5 +1,5 @@
-from utils import *
-from model_setup import *
+from src.utils import *
+from src.model_setup import *
 
 
 
