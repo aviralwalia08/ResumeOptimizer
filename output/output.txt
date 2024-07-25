@@ -1,0 +1,66 @@
+Aviral Walia
+
+Contact Information:
+
+Address: 123 Main St, Toronto, ON M1X 1Y2
+Phone: (123) 456-7890
+Email: aviral.walia@example.com
+LinkedIn: linkedin.com/in/aviralwalia
+
+Professional Summary:
+Results-driven Data Scientist with 5 years of experience in technology and financial services. Proficient in Python, SQL, and machine learning techniques. Demonstrated ability to improve efficiency and enhance predictive models. Seeking to leverage analytical skills and expertise to drive data-driven decision-making.
+
+Professional Experience:
+
+Intermediate Data Scientist
+Clio, Toronto, ON
+
+Collaborated with the Clio products teams to refine business problems, develop hypotheses, and provide input that drives growth.
+Suggested new questions about our business, product, and customers that lead to impactful insights.
+Worked with other team members to develop predictive AI and ML solutions and deploy them in production.
+Applied rigorous statistical analysis and data mining techniques to evaluate impact of different product features and other business initiatives.
+Employed statistical analysis, machine learning, GenAI, LLMs, etc. to unlock new product opportunities.
+Supported scientific thinking in product and business teams by enabling discussions with data, disseminating best practices, and leading by example.
+Effectively communicated complex technical concepts and findings to both technical and non-technical audiences.
+
+Senior Data Scientist
+ZENON AI, Toronto, ON
+Jan 2021 – Present
+
+Developed and deployed machine learning models to predict customer behavior, resulting in a 20% increase in retention rates.
+Improved data processing efficiency by 30% through the implementation of advanced data pipelines.
+Collaborated with cross-functional teams to develop credit risk models, reducing default rates by 15%.
+
+Data Analyst
+EXL Services, Toronto, ON
+Jul 2018 – Dec 2020
+
+Conducted data analysis to support business strategy and decision-making processes.
+Automated reporting processes, reducing manual reporting time by 40%.
+Built and maintained dashboards to track key performance indicators (KPIs).
+
+Education:
+
+Master of Science in Big Data Analytics
+Trent University, Peterborough, ON
+Expected Graduation: 2024
+
+Bachelor of Technology in Computer Science
+Chitkara University, Punjab, India
+2018
+
+Skills:
+
+Programming Languages: Python, SQL
+Data Analysis: Excel, VBA, Tableau
+Machine Learning: Scikit-learn, TensorFlow
+Data Processing: Pandas, NumPy
+Tools: Elastic Search, NLP
+
+Certifications:
+
+Certified Data Scientist, Data Science Council of America (DASCA)
+
+Projects:
+
+Resume Optimizer: Developed an intelligent system using the LangChain framework to assess and enhance resumes based on job descriptions.

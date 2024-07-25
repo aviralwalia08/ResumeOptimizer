@@ -59,6 +59,11 @@ def create_circular_progress_bar(progress):
 
 
 def display_results_page(resume_text, job_desc_text):
+    # print('################ testing ########################')
+    # print(resume_text)
+    # print('========')
+    # print(job_desc_text)
+    # print('################testing_close########################')
     st.markdown('<div class="header">📊 Results and Suggestions</div>', unsafe_allow_html=True)
     st.write("Here are the results based on your uploaded resume and job description.")
 
@@ -120,7 +125,12 @@ def display_results_page(resume_text, job_desc_text):
         st.markdown('<div class="box highlight">' + '<br>'.join(soft_skills) + '</div>', unsafe_allow_html=True)
 
         if st.button("Optimize"):
-            st.experimental_set_query_params(page="optimize_results")
+            # print('################res########################')
+            # print(resume_text)
+            # print('========')
+            # print(job_desc_text)
+            # print('################res_close########################')
+            st.experimental_set_query_params(page="optimize_results", resume_text=resume_text, job_desc_text=job_desc_text)
             st.experimental_rerun()
 
     if st.button("Back", key="back"):

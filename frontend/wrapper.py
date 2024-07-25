@@ -117,7 +117,9 @@ st.markdown("""
 params = st.experimental_get_query_params()
 
 if params.get("page") == ["optimize_results"]:
-    display_optimization_results_page()
+    resume_text_new = params.get("resume_text", [""])[0]
+    job_desc_text_new = params.get("job_desc_text", [""])[0]
+    display_optimization_results_page(resume_text_new,job_desc_text_new)
 elif params.get("page") == ["results"]:
     resume_text = params.get("resume_text", [""])[0]
     job_desc_text = params.get("job_desc_text", [""])[0]

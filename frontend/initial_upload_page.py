@@ -26,9 +26,14 @@ def display_initial_upload_page():
 
         if job_desc_file is not None:
             job_desc_text = input_pdf_text(job_desc_file)
-            resume_text = f"""{str(job_desc_text)}"""
+            job_desc_text = f"""{str(job_desc_text)}"""
 
         if (resume_text != "") & (job_desc_text != ""):
+            # print('################ part 1 ########################')
+            # print(resume_text)
+            # print('========')
+            # print(job_desc_text)
+            # print('################part 1 close########################')
             st.experimental_set_query_params(page="results", resume_text=resume_text, job_desc_text=job_desc_text)
             st.experimental_rerun()
         elif resume_text == "":

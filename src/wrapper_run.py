@@ -212,7 +212,9 @@ from topKeywords_JD import *
 from hardSoftSkills_JD import *
 from hardSoftSkills_resume import *
 from match_score import *
-from keywords_found_missing import *
+from keywords_found import *
+from keywords_missing import *
+from overall_edition import *
 
 # keywords_resume = top_keywords_resume(format_instructions, industry,Job_Profile,resume_marketing)
 # print(keywords_resume[0]['TopKeywords'])
@@ -230,8 +232,14 @@ from keywords_found_missing import *
 # print(score)
 # print(int(score[0]['Match_score']))
 
-# score = match_score(Job_Profile,Job_Description,resume_marketing)
-# print(score[0]['Match_score'],"%" )
+score = match_score(Job_Profile,Job_Description,resume)
+print('score -------------------------------> ',score)
 
-key_mis_foun =  keywords_found_missing(Job_Profile,Job_Description,resume)
-print(key_mis_foun)
+# key_mis_foun =  keywords_found_missing(Job_Profile,Job_Description,resume)
+# print(key_mis_foun)
+
+upd_res = overall_edit(industry,Job_Profile,Job_Description,resume)
+print(upd_res)
+
+score = match_score(Job_Profile,Job_Description,upd_res)
+print('score 2 ---------------------------------> ',score)
