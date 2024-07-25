@@ -10,6 +10,10 @@ from src.hardSoftSkills_resume import *
 from src.match_score import *
 from src.keywords_found import *
 from src.keywords_missing import *
+import warnings
+
+# Suppress specific warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 industry = 'Data Science'
 Job_Profile = 'Data Scientist'

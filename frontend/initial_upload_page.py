@@ -2,6 +2,10 @@
 
 import streamlit as st
 from src.utils import *
+import warnings
+
+# Suppress specific warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 def display_initial_upload_page():
     st.markdown('<div class="header">📄 Resume Optimizer</div>', unsafe_allow_html=True)
@@ -35,6 +39,7 @@ def display_initial_upload_page():
             # print(job_desc_text)
             # print('################part 1 close########################')
             st.experimental_set_query_params(page="results", resume_text=resume_text, job_desc_text=job_desc_text)
+            # st.query_params.from_dict({page:"results", resume_text:resume_text, job_desc_text:job_desc_text})
             st.experimental_rerun()
         elif resume_text == "":
             st.info("Please upload the resume.", icon="⚠️")

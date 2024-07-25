@@ -1,17 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
-
-
-#pip install pdfplumber
-#uploaded_resume_path = "C:/Users/Lenovo/Downloads/pt_restaurant(Sawan).pdf"  # Replace with the actual path to the uploaded resume
- #   optimized_resume_path = "C:/Users/Lenovo/Downloads/pt_grocery_warehouse_cashier(Sawan)_2[1].pdf"
-
-
-# In[5]:
-
-
 import streamlit as st
 import spacy
 import pandas as pd
@@ -19,6 +5,10 @@ import plotly.graph_objects as go
 import pdfplumber
 from io import BytesIO
 import base64
+import warnings
+
+# Suppress specific warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # Custom CSS to improve the look of the app
 st.markdown("""

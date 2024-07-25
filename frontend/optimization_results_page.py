@@ -6,6 +6,10 @@ import plotly.graph_objects as go
 import base64
 from src.overall_edition import *
 from src.suggestions_resume import *
+import warnings
+
+# Suppress specific warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 industry = 'Data Science'
 Job_Profile = 'Data Scientist'
@@ -28,6 +32,28 @@ def highlight_differences(text1, text2):
             highlighted_text2.extend([f"<span style='background-color: lightgreen;'>{word}</span>" for word in text2.split()[j1:j2]])
     
     return " ".join(highlighted_text1), " ".join(highlighted_text2)
+
+
+
+# def highlight_differences(text1, text2):
+#     matcher = difflib.SequenceMatcher(None, text1, text2)
+#     highlighted_text1 = []
+#     highlighted_text2 = []
+
+#     for tag, i1, i2, j1, j2 in matcher.get_opcodes():
+#         if tag == 'equal':
+#             highlighted_text1.append(text1[i1:i2])
+#             highlighted_text2.append(text2[j1:j2])
+#         elif tag == 'replace':
+#             highlighted_text1.append(f"<span style='background-color: pink;'>{text1[i1:i2]}</span>")
+#             highlighted_text2.append(f"<span style='background-color: lightgreen;'>{text2[j1:j2]}</span>")
+#         elif tag == 'delete':
+#             highlighted_text1.append(f"<span style='background-color: red;'>{text1[i1:i2]}</span>")
+#         elif tag == 'insert':
+#             highlighted_text2.append(f"<span style='background-color: lightgreen;'>{text2[j1:j2]}</span>")
+    
+#     return "".join(highlighted_text1), "".join(highlighted_text2)
+
 
 def create_circular_progress_bar(progress):
     fig = go.Figure(go.Pie(
@@ -119,3 +145,5 @@ def display_optimization_results_page(resume_text_new,job_desc_text_new):
         st.experimental_rerun()
 
     st.markdown("</div>", unsafe_allow_html=True)
+
+    st.info("Ensure your resume is updated with relevant suggestions and make sure you format it as well.")

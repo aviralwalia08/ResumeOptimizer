@@ -5,6 +5,10 @@ from initial_upload_page import display_initial_upload_page
 # from results_page import display_results_page
 from results_page import *
 from optimization_results_page import display_optimization_results_page
+import warnings
+
+# Suppress specific warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # Custom CSS to improve the look of the app
 st.markdown("""
